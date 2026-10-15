@@ -4,10 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ohad Gadassi | Full-Stack Developer</title>
-  <meta name="description" content="Ohad Gadassi, Full-Stack Developer from Ramat Gan: web, mobile and desktop projects.">
+  <meta name="description" content="Ohad Gadassi, junior full-stack and mobile developer in Ramat Gan with IT support experience. Web, mobile and desktop projects.">
+  <link rel="canonical" href="https://ogadassi.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Ohad Gadassi | Full-Stack Developer">
+  <meta property="og:description" content="Ohad Gadassi, junior full-stack and mobile developer in Ramat Gan with IT support experience. Web, mobile and desktop projects.">
+  <meta property="og:url" content="https://ogadassi.github.io/">
+  <meta property="og:image" content="https://ogadassi.github.io/assets/profile.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="308">
+  <meta property="og:image:height" content="308">
+  <meta property="og:image:alt" content="Ohad Gadassi">
+  <meta property="profile:first_name" content="Ohad">
+  <meta property="profile:last_name" content="Gadassi">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ohad Gadassi | Full-Stack Developer">
+  <meta name="twitter:description" content="Ohad Gadassi, junior full-stack and mobile developer in Ramat Gan with IT support experience. Web, mobile and desktop projects.">
+  <meta name="twitter:image" content="https://ogadassi.github.io/assets/profile.jpg">
+  <meta name="twitter:image:alt" content="Ohad Gadassi">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ohad Gadassi",
+    "jobTitle": "Full-Stack Developer",
+    "url": "https://ogadassi.github.io/",
+    "image": "https://ogadassi.github.io/assets/profile.jpg",
+    "email": "mailto:ogadassi@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ramat Gan",
+      "addressCountry": "IL"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "John Bryce"
+    },
+    "sameAs": [
+      "https://github.com/ogadassi",
+      "https://www.linkedin.com/in/ohad-gadassi/"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="intro">
@@ -16,25 +63,26 @@
         <h1>Ohad Gadassi</h1>
         <p class="title">Full-Stack Developer · Mobile &amp; Web Applications · IT Support</p>
         <p class="location">Ramat Gan, Israel</p>
-        <p class="status">Open to work: Junior Full-Stack / Frontend / Backend, Junior Mobile (React Native), Support Engineer / Tier 3</p>
+        <p class="pitch">Junior full-stack and mobile developer with hands-on IT support experience. Open to full-stack, frontend, backend, React Native and support engineering roles.</p>
         <ul class="contact-links">
-          <li><a href="mailto:ogadassi@gmail.com">ogadassi@gmail.com</a></li>
+          <li><a class="button" href="mailto:ogadassi@gmail.com">Email me</a></li>
+          <li><a class="button" href="https://www.linkedin.com/in/ohad-gadassi/" target="_blank" rel="noopener">Full CV on LinkedIn</a></li>
           <li><a href="https://github.com/ogadassi" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/ohad-gadassi/" target="_blank" rel="noopener">LinkedIn</a></li>
         </ul>
       </div>
     </div>
 
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Sections">
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#military">Military service</a>
+      <a href="#skills">Skills</a>
       <a href="#education">Education</a>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
 
     <section id="about" class="section">
       <h2>About</h2>
@@ -42,23 +90,8 @@
         I'm a Full-Stack developer with a strong background in IT infrastructure and system management.
         I build end-to-end web, mobile and desktop projects, and lately a lot of tools that automate my own
         daily life: Android apps, browser extensions, desktop widgets and Discord bots. I graduated the
-        John Bryce Full-Stack course with honors, and I'm a proactive problem-solver who likes learning
-        new technologies.
+        John Bryce Full-Stack course with honors.
       </p>
-    </section>
-
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <dl class="skills">
-        <dt>Languages</dt>
-        <dd>JavaScript, TypeScript, Python, Kotlin, Lua, HTML/CSS</dd>
-        <dt>Frontend &amp; mobile</dt>
-        <dd>React, React Native / Expo, Angular, Jetpack Compose (Android), Electron, Chrome extensions</dd>
-        <dt>Backend &amp; data</dt>
-        <dd>Node.js, NestJS, Flask, REST APIs, WebSockets (Socket.io), MySQL, MongoDB, Supabase, Appwrite</dd>
-        <dt>Tools</dt>
-        <dd>Git, Docker, Vercel, GitHub</dd>
-      </dl>
     </section>
 
     <section id="projects" class="section">
@@ -70,7 +103,7 @@
           <h3>Steelman <span class="badge">Private repo</span></h3>
           <p>An education app for iOS, Android and web that trains you to spot logical fallacies and bad arguments before they fool you. The website opens with a playable "Fair, or a fallacy?" demo. Pre-launch.</p>
           <ul class="tags"><li>Expo</li><li>React Native</li><li>TypeScript</li><li>Supabase</li></ul>
-          <p class="links"><a href="https://playsteelman.vercel.app" target="_blank" rel="noopener">Live site</a></p>
+          <p class="links"><a href="https://playsteelman.vercel.app" target="_blank" rel="noopener" aria-label="Steelman live site">Live site</a></p>
         </article>
 
         <article class="project">
@@ -81,14 +114,14 @@
             <li><strong>Sterrify Tabs</strong> <span class="badge">Private repo</span>: a newer Spicetify custom app that renders the tab for the current song inside the Spotify client with alphaTab, synced to the playhead, with MIDI out to an amp sim.</li>
           </ul>
           <ul class="tags"><li>Electron</li><li>Node.js</li><li>Spotify API</li><li>Spicetify</li><li>alphaTab</li></ul>
-          <p class="links"><a href="https://github.com/ogadassi/Sterrify" target="_blank" rel="noopener">Repo (desktop app)</a></p>
+          <p class="links"><a href="https://github.com/ogadassi/Sterrify" target="_blank" rel="noopener" aria-label="Sterrify desktop app repository on GitHub">Repo (desktop app)</a></p>
         </article>
 
         <article class="project">
           <h3>AC Notification</h3>
           <p>Proximity-based smart AC automation. An Android and Android Auto app uses geofencing around home to offer a 1-tap "turn on AC" notification, backed by a Python Flask server on a Windows PC via ngrok.</p>
           <ul class="tags"><li>Kotlin</li><li>Android Auto</li><li>Geofencing</li><li>Python</li><li>Flask</li><li>ngrok</li></ul>
-          <p class="links"><a href="https://github.com/ogadassi/ac-notification" target="_blank" rel="noopener">Repo</a></p>
+          <p class="links"><a href="https://github.com/ogadassi/ac-notification" target="_blank" rel="noopener" aria-label="AC Notification repository on GitHub">Repo</a></p>
         </article>
 
         <article class="project">
@@ -96,8 +129,8 @@
           <p>A Chrome extension that adds 1-click add/remove Watch Later buttons across YouTube. Theme-aware and language-independent. Published on the Chrome Web Store.</p>
           <ul class="tags"><li>JavaScript</li><li>Chrome extension</li></ul>
           <p class="links">
-            <a href="https://chromewebstore.google.com/detail/youtube-watch-later-manag/cipblemimaiffjenjhnplnegbembhgmc" target="_blank" rel="noopener">Chrome Web Store</a>
-            <a href="https://github.com/ogadassi/WatchLater" target="_blank" rel="noopener">Repo</a>
+            <a href="https://chromewebstore.google.com/detail/youtube-watch-later-manag/cipblemimaiffjenjhnplnegbembhgmc" target="_blank" rel="noopener" aria-label="YouTube Watch Later Manager on the Chrome Web Store">Chrome Web Store</a>
+            <a href="https://github.com/ogadassi/WatchLater" target="_blank" rel="noopener" aria-label="YouTube Watch Later Manager repository on GitHub">Repo</a>
           </p>
         </article>
 
@@ -105,14 +138,14 @@
           <h3>Forest</h3>
           <p>Visual, canvas-based task management with drag-and-drop and real-time sync. A mobile companion with time- and location-based reminders is in development.</p>
           <ul class="tags"><li>React 19</li><li>Vite</li><li>Tailwind</li><li>Node.js</li><li>Socket.io</li></ul>
-          <p class="links"><a href="https://github.com/ogadassi/Forest" target="_blank" rel="noopener">Repo</a></p>
+          <p class="links"><a href="https://github.com/ogadassi/Forest" target="_blank" rel="noopener" aria-label="Forest repository on GitHub">Repo</a></p>
         </article>
 
         <article class="project">
           <h3>Grapevine</h3>
           <p>A gamified mobile social network with a real-time feed, custom reactions, multiplayer games and a virtual economy.</p>
           <ul class="tags"><li>React Native</li><li>Appwrite</li></ul>
-          <p class="links"><a href="https://github.com/ogadassi/Grapevine" target="_blank" rel="noopener">Repo</a></p>
+          <p class="links"><a href="https://github.com/ogadassi/Grapevine" target="_blank" rel="noopener" aria-label="Grapevine repository on GitHub">Repo</a></p>
         </article>
 
         <article class="project">
@@ -160,13 +193,30 @@
         <p class="dates">2022 – 2023</p>
         <p>Managed logistics with modern inventory systems in a fast-paced high-tech environment.</p>
       </article>
+    </section>
 
-      <h3 class="subheading">Military service</h3>
+    <section id="military" class="section">
+      <h2>Military service</h2>
+
       <article class="job">
         <h3>Bureau Manager &amp; Assistant to Head of Casualty Department</h3>
         <p class="dates">2019 – 2022</p>
         <p>Managed executive schedules and discussion materials and trained bureau staff. Ran the command-and-control center during national emergencies, processing real-time casualty data. Recalled for reserve duty in 2022 to manage the leadership transition for the Head of the Department.</p>
       </article>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt>
+        <dd>JavaScript, TypeScript, Python, Kotlin, Lua, HTML/CSS</dd>
+        <dt>Frontend &amp; mobile</dt>
+        <dd>React, React Native / Expo, Angular, Jetpack Compose (Android), Electron, Chrome extensions</dd>
+        <dt>Backend &amp; data</dt>
+        <dd>Node.js, NestJS, Flask, REST APIs, WebSockets (Socket.io), MySQL, MongoDB, Supabase, Appwrite</dd>
+        <dt>Tools</dt>
+        <dd>Git, Docker, Vercel, GitHub</dd>
+      </dl>
     </section>
 
     <section id="education" class="section">
@@ -180,7 +230,7 @@
       <p>Hebrew (native), English (fluent)</p>
 
       <h3 class="subheading">Beyond code</h3>
-      <p>I'm a musician who plays in a band (TRIOT) and builds tools for my own playing (Sterrify). Most of my side projects start as "this annoys me, let me automate it."</p>
+      <p>I'm a musician who plays in a band (TRIOT). Most of my side projects start as "this annoys me, let me automate it."</p>
     </section>
 
   </main>
