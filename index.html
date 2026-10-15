@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ohad Gadassi | Full-Stack Developer</title>
-  <meta name="description" content="Ohad Gadassi, junior full-stack and mobile developer in Ramat Gan with IT support experience. Web, mobile and desktop projects.">
+  <meta name="description" content="Ohad Gadassi, full-stack developer in Ramat Gan. I build web and mobile apps with React, Node.js and React Native, many used daily. Open to full-stack roles.">
   <link rel="canonical" href="https://ogadassi.github.io/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Ohad Gadassi | Full-Stack Developer">
-  <meta property="og:description" content="Ohad Gadassi, junior full-stack and mobile developer in Ramat Gan with IT support experience. Web, mobile and desktop projects.">
+  <meta property="og:description" content="Ohad Gadassi, full-stack developer in Ramat Gan. I build web and mobile apps with React, Node.js and React Native, many used daily. Open to full-stack roles.">
   <meta property="og:url" content="https://ogadassi.github.io/">
   <meta property="og:image" content="https://ogadassi.github.io/assets/profile.jpg">
   <meta property="og:image:type" content="image/jpeg">
@@ -23,7 +23,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Ohad Gadassi | Full-Stack Developer">
-  <meta name="twitter:description" content="Ohad Gadassi, junior full-stack and mobile developer in Ramat Gan with IT support experience. Web, mobile and desktop projects.">
+  <meta name="twitter:description" content="Ohad Gadassi, full-stack developer in Ramat Gan. I build web and mobile apps with React, Node.js and React Native, many used daily. Open to full-stack roles.">
   <meta name="twitter:image" content="https://ogadassi.github.io/assets/profile.jpg">
   <meta name="twitter:image:alt" content="Ohad Gadassi">
 
@@ -61,9 +61,9 @@
       <img class="profile-photo" src="assets/profile.jpg" alt="Ohad Gadassi" width="160" height="160">
       <div class="intro-text">
         <h1>Ohad Gadassi</h1>
-        <p class="title">Full-Stack Developer · Mobile &amp; Web Applications · IT Support</p>
+        <p class="title">Full-Stack Developer · React, Node.js, React Native</p>
         <p class="location">Ramat Gan, Israel</p>
-        <p class="pitch">Junior full-stack and mobile developer with hands-on IT support experience. Open to full-stack, frontend, backend, React Native and support engineering roles.</p>
+        <p class="pitch">I'm a junior full-stack developer building web and mobile apps with React, Node.js and React Native. I build tools for problems I actually have, and I use many of them daily. Open to full-stack, frontend, backend and React Native roles. I also bring hands-on IT support experience.</p>
         <ul class="contact-links">
           <li><a class="button" href="mailto:ogadassi@gmail.com">Email me</a></li>
           <li><a class="button" href="https://www.linkedin.com/in/ohad-gadassi/" target="_blank" rel="noopener">Full CV on LinkedIn</a></li>
@@ -87,46 +87,50 @@
     <section id="about" class="section">
       <h2>About</h2>
       <p>
-        I'm a Full-Stack developer with a strong background in IT infrastructure and system management.
-        I build end-to-end web, mobile and desktop projects, and lately a lot of tools that automate my own
-        daily life: Android apps, browser extensions, desktop widgets and Discord bots. I graduated the
-        John Bryce Full-Stack course with honors.
+        I work in IT support at Ramat Gan Municipality, and I spend the rest of my time building software.
+        Support work shows me every day what actually breaks for real users, and I carry that into how I build.
+        I build tools for problems I have myself, use many of them daily, and published one to the Chrome Web Store.
+        I graduated the John Bryce Full-Stack course with honors, and next I want to do this full time as a full-stack developer.
       </p>
     </section>
 
     <section id="projects" class="section">
       <h2>Featured projects</h2>
+      <p>I built all of these solo, except Grapevine.</p>
 
       <div class="project-list">
 
         <article class="project">
-          <h3>Steelman <span class="badge">Private repo</span></h3>
-          <p>An education app for iOS, Android and web that trains you to spot logical fallacies and bad arguments before they fool you. The website opens with a playable "Fair, or a fallacy?" demo. Pre-launch.</p>
-          <ul class="tags"><li>Expo</li><li>React Native</li><li>TypeScript</li><li>Supabase</li></ul>
+          <h3>Steelman <span class="badge">Pre-launch</span> <span class="badge">Private repo</span></h3>
+          <p><strong>Problem:</strong> Everyone has the list of logical fallacies. Nobody trains the reflex to spot them.</p>
+          <p><strong>What I built:</strong> An education app for iOS, Android and web that trains you to catch bad arguments. The Astro website opens with a playable "Fair, or a fallacy?" demo and a waitlist.</p>
+          <p><strong>Proof:</strong> 74 fallacies, 332 practice questions and 12 debates ready in the app.</p>
+          <ul class="tags"><li>Expo</li><li>React Native</li><li>TypeScript</li><li>Supabase</li><li>Astro</li></ul>
           <p class="links"><a href="https://playsteelman.vercel.app" target="_blank" rel="noopener" aria-label="Steelman live site">Live site</a></p>
         </article>
 
         <article class="project">
-          <h3>Sterrify</h3>
-          <p>Tools for guitarists that follow what's playing on Spotify.</p>
-          <ul class="sub-projects">
-            <li><strong>Desktop app:</strong> a Songsterr wrapper with Spotify sync, Discord status and automatic instrument/tuning switching.</li>
-            <li><strong>Sterrify Tabs</strong> <span class="badge">Private repo</span>: a newer Spicetify custom app that renders the tab for the current song inside the Spotify client with alphaTab, synced to the playhead, with MIDI out to an amp sim.</li>
-          </ul>
+          <h3>Sterrify <span class="badge">Daily use</span></h3>
+          <p><strong>Problem:</strong> Playing along meant switching between Spotify and Songsterr while holding an instrument.</p>
+          <p><strong>What I built:</strong> An Electron app that syncs Songsterr to Spotify and switches instrument and tuning automatically. I then rebuilt it as Sterrify Tabs <span class="badge">Private repo</span>, a Spicetify app that renders the tab inside Spotify with alphaTab. The old app polled the Web API, which caused 465 ms of its 567 ms median sync lag. Running inside Spotify removes that delay.</p>
+          <p><strong>Proof:</strong> I use it daily. Sterrify Tabs has an automated test suite.</p>
           <ul class="tags"><li>Electron</li><li>Node.js</li><li>Spotify API</li><li>Spicetify</li><li>alphaTab</li></ul>
           <p class="links"><a href="https://github.com/ogadassi/Sterrify" target="_blank" rel="noopener" aria-label="Sterrify desktop app repository on GitHub">Repo (desktop app)</a></p>
         </article>
 
         <article class="project">
-          <h3>AC Notification</h3>
-          <p>Proximity-based smart AC automation. An Android and Android Auto app uses geofencing around home to offer a 1-tap "turn on AC" notification, backed by a Python Flask server on a Windows PC via ngrok.</p>
+          <h3>AC Notification <span class="badge">Daily use</span></h3>
+          <p><strong>What I built:</strong> A geofence around home triggers a 1-tap "turn on AC" notification on Android and Android Auto. A Windows server (Python Flask, exposed through ngrok) controls Midea ACs directly over the LAN.</p>
+          <p><strong>Proof:</strong> 128 commits and 10 GitHub releases (v1.1 to v2.5) in about two months. I use it daily.</p>
           <ul class="tags"><li>Kotlin</li><li>Android Auto</li><li>Geofencing</li><li>Python</li><li>Flask</li><li>ngrok</li></ul>
           <p class="links"><a href="https://github.com/ogadassi/ac-notification" target="_blank" rel="noopener" aria-label="AC Notification repository on GitHub">Repo</a></p>
         </article>
 
         <article class="project">
-          <h3>YouTube Watch Later Manager</h3>
-          <p>A Chrome extension that adds 1-click add/remove Watch Later buttons across YouTube. Theme-aware and language-independent. Published on the Chrome Web Store.</p>
+          <h3>YouTube Watch Later Manager <span class="badge">Published</span> <span class="badge">Daily use</span></h3>
+          <p><strong>Problem:</strong> Saving or removing a video from Watch Later is buried in YouTube's menus.</p>
+          <p><strong>What I built:</strong> A Chrome extension with 1-click Watch Later buttons across YouTube. It matches icon shapes instead of English text, so it works in any language. It finds buttons at click time, because YouTube reuses page elements. Theme-aware, with no trackers.</p>
+          <p><strong>Proof:</strong> 24 users and 5.0 stars on the Chrome Web Store. I use it daily.</p>
           <ul class="tags"><li>JavaScript</li><li>Chrome extension</li></ul>
           <p class="links">
             <a href="https://chromewebstore.google.com/detail/youtube-watch-later-manag/cipblemimaiffjenjhnplnegbembhgmc" target="_blank" rel="noopener" aria-label="YouTube Watch Later Manager on the Chrome Web Store">Chrome Web Store</a>
@@ -135,28 +139,33 @@
         </article>
 
         <article class="project">
-          <h3>Forest</h3>
-          <p>Visual, canvas-based task management with drag-and-drop and real-time sync. A mobile companion with time- and location-based reminders is in development.</p>
-          <ul class="tags"><li>React 19</li><li>Vite</li><li>Tailwind</li><li>Node.js</li><li>Socket.io</li></ul>
+          <h3>Forest <span class="badge">Paused</span></h3>
+          <p><strong>What I built:</strong> A canvas-based task manager with drag-and-drop and real-time sync over Socket.io. React 19 and Vite on the front end, Node.js, Express and Prisma on the back end, with Jest tests.</p>
+          <p><strong>Status:</strong> Paused. A mobile companion with time- and location-based reminders is planned.</p>
+          <ul class="tags"><li>React 19</li><li>Vite</li><li>Tailwind</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>Socket.io</li><li>Jest</li></ul>
           <p class="links"><a href="https://github.com/ogadassi/Forest" target="_blank" rel="noopener" aria-label="Forest repository on GitHub">Repo</a></p>
         </article>
 
         <article class="project">
-          <h3>Grapevine</h3>
-          <p>A gamified mobile social network with a real-time feed, custom reactions, multiplayer games and a virtual economy.</p>
-          <ul class="tags"><li>React Native</li><li>Appwrite</li></ul>
+          <h3>Grapevine <span class="badge">Built with a friend</span></h3>
+          <p><strong>Problem:</strong> A friend community wanted its own private social space.</p>
+          <p><strong>What we built:</strong> A gamified mobile social network with a real-time feed, custom reactions, coin bets ("Battles"), an in-app store with a virtual economy, and multiplayer games.</p>
+          <ul class="tags"><li>React Native</li><li>Expo</li><li>Appwrite</li></ul>
           <p class="links"><a href="https://github.com/ogadassi/Grapevine" target="_blank" rel="noopener" aria-label="Grapevine repository on GitHub">Repo</a></p>
         </article>
 
         <article class="project">
-          <h3>Friendmeter <span class="badge">Private repo</span></h3>
-          <p>A real-time Windows desktop widget: a "Liquid Glass" Rainmeter skin plus a Node.js bridge that tracks Discord friends' presence and WhatsApp notifications. Clicking a notification jumps straight to the chat.</p>
+          <h3>Friendmeter <span class="badge">Daily use</span> <span class="badge">Private repo</span></h3>
+          <p><strong>What I built:</strong> A Windows desktop widget: a "Liquid Glass" Rainmeter skin plus a Node.js bridge. Clicking a notification jumps to the chat. An early version simulated keystrokes and could type a name into the wrong chat. I rebuilt it on Windows UI Automation, with no typing and reliable Hebrew name matching.</p>
+          <p><strong>Proof:</strong> I use it daily. Covered by unit tests.</p>
           <ul class="tags"><li>Lua</li><li>Rainmeter</li><li>Node.js</li><li>TypeScript</li></ul>
         </article>
 
         <article class="project">
-          <h3>Android Bluetooth Control Widget <span class="badge">Private repo</span></h3>
-          <p>A home-screen widget that connects or disconnects specific Bluetooth devices in one tap, without root, using Shizuku. Shrunk the APK from 13.9 MB to 1.9 MB with R8.</p>
+          <h3>Android Bluetooth Control Widget <span class="badge">Daily use</span> <span class="badge">Private repo</span></h3>
+          <p><strong>Problem:</strong> Android makes you dig into system settings to connect one specific Bluetooth device.</p>
+          <p><strong>What I built:</strong> A one-tap home-screen widget that works without root, using Shizuku. Android 12+ hides MAC addresses, so it matches devices by name instead. R8 shrank the APK from 13.9 MB to 1.9 MB.</p>
+          <p><strong>Proof:</strong> I use it daily.</p>
           <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Shizuku</li></ul>
         </article>
 
@@ -165,10 +174,10 @@
       <h3 class="subheading">Earlier &amp; smaller work</h3>
       <ul class="earlier-work">
         <li><a href="https://github.com/ogadassi/RLScoreBot" target="_blank" rel="noopener">RLScoreBot</a>: a Python Discord bot that watches Rocket League with computer vision and plays a sound in voice chat when a goal is scored.</li>
-        <li><a href="https://github.com/ogadassi/gmm-player" target="_blank" rel="noopener">Mythical Vision</a>: a "vintage morning TV" YouTube player. Channel-style, no scrolling or algorithms.</li>
-        <li>JobScout <span class="badge">Private repo</span>: a TypeScript/NestJS tool that aggregates and scores junior developer job listings into Excel.</li>
-        <li><a href="https://github.com/ogadassi/Vacation-Time" target="_blank" rel="noopener">Vacation Time</a>: John Bryce final project, a vacation-planning web app.</li>
-        <li><a href="https://github.com/ogadassi/triot-official-website" target="_blank" rel="noopener">TRIOT</a>: website for my band.</li>
+        <li><a href="https://github.com/ogadassi/gmm-player" target="_blank" rel="noopener">Mythical Vision</a>: a "vintage morning TV" YouTube player. Channel-style, with no scrolling and no algorithms.</li>
+        <li>JobScout <span class="badge">Private repo</span>: a TypeScript/NestJS tool that collects and scores junior developer job listings into Excel.</li>
+        <li><a href="https://github.com/ogadassi/Vacation-Time" target="_blank" rel="noopener">Vacation Time</a>: my John Bryce final project, a vacation-planning web app.</li>
+        <li><a href="https://github.com/ogadassi/triot-official-website" target="_blank" rel="noopener">TRIOT</a>: the website for my band.</li>
         <li><a href="https://ogadassi.github.io/MineSweeper/" target="_blank" rel="noopener">MineSweeper</a>: a browser game.</li>
       </ul>
     </section>
@@ -179,19 +188,29 @@
       <article class="job">
         <h3>IT Support Specialist <span class="org">Ramat Gan Municipality</span></h3>
         <p class="dates">2025 – present</p>
-        <p>Diagnosed and resolved hardware and OS issues in a large organization. Managed user permissions and connectivity and supported core systems.</p>
+        <ul>
+          <li>Diagnose and fix hardware and OS issues for staff across a large organization, so they can get back to work.</li>
+          <li>Manage user permissions and connectivity, and support the core systems the municipality runs on.</li>
+          <li>See firsthand what breaks for real users, which shapes how I build my own software.</li>
+        </ul>
       </article>
 
       <article class="job">
         <h3>General Insurance Service Representative <span class="org">Phoenix</span></h3>
         <p class="dates">2024 – 2025</p>
-        <p>Identified client needs and explained complex technical and insurance information under strict KPIs.</p>
+        <ul>
+          <li>Identified client needs and explained complex technical and insurance information clearly.</li>
+          <li>Met strict KPIs while working with multiple internal and external interfaces.</li>
+        </ul>
       </article>
 
       <article class="job">
         <h3>Electronics Logistics Stock Keeper <span class="org">Rad Data Communications</span></h3>
         <p class="dates">2022 – 2023</p>
-        <p>Managed logistics with modern inventory systems in a fast-paced high-tech environment.</p>
+        <ul>
+          <li>Managed electronics logistics with modern inventory systems.</li>
+          <li>Kept stock records precise in a fast-paced high-tech environment.</li>
+        </ul>
       </article>
     </section>
 
@@ -201,21 +220,23 @@
       <article class="job">
         <h3>Bureau Manager &amp; Assistant to Head of Casualty Department</h3>
         <p class="dates">2019 – 2022</p>
-        <p>Managed executive schedules and discussion materials and trained bureau staff. Ran the command-and-control center during national emergencies, processing real-time casualty data. Recalled for reserve duty in 2022 to manage the leadership transition for the Head of the Department.</p>
+        <ul>
+          <li>Ran the command-and-control center during national emergencies, processing casualty data in real time.</li>
+          <li>Managed executive schedules and discussion materials, and trained bureau staff.</li>
+          <li>Recalled for reserve duty in 2022 to manage the leadership transition for the Head of the Department.</li>
+        </ul>
       </article>
     </section>
 
     <section id="skills" class="section">
       <h2>Skills</h2>
       <dl class="skills">
-        <dt>Languages</dt>
-        <dd>JavaScript, TypeScript, Python, Kotlin, Lua, HTML/CSS</dd>
-        <dt>Frontend &amp; mobile</dt>
-        <dd>React, React Native / Expo, Angular, Jetpack Compose (Android), Electron, Chrome extensions</dd>
-        <dt>Backend &amp; data</dt>
-        <dd>Node.js, NestJS, Flask, REST APIs, WebSockets (Socket.io), MySQL, MongoDB, Supabase, Appwrite</dd>
+        <dt>Core</dt>
+        <dd>JavaScript, TypeScript, React, Node.js, React Native / Expo, SQL (MySQL), MongoDB, HTML/CSS</dd>
+        <dt>Also worked with</dt>
+        <dd>Python, Kotlin, Lua, Angular, Jetpack Compose (Android), Electron, Chrome extensions, Spicetify, Astro, Vite, Tailwind, Express, NestJS, Flask, Prisma, REST APIs, WebSockets (Socket.io), Supabase, Appwrite</dd>
         <dt>Tools</dt>
-        <dd>Git, Docker, Vercel, GitHub</dd>
+        <dd>Git, GitHub, Docker, Vercel, Jest</dd>
       </dl>
     </section>
 
@@ -230,7 +251,7 @@
       <p>Hebrew (native), English (fluent)</p>
 
       <h3 class="subheading">Beyond code</h3>
-      <p>I'm a musician who plays in a band (TRIOT). Most of my side projects start as "this annoys me, let me automate it."</p>
+      <p>I play in a band, TRIOT, and I built our website too. Most of my side projects start the same way: "this annoys me, let me automate it."</p>
     </section>
 
   </main>
