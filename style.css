@@ -1,0 +1,220 @@
+/* Basic styles on purpose: this page gets a full redesign in the next lesson. */
+
+:root {
+  --accent: #2f6f4f;
+  --text: #222;
+  --muted: #666;
+  --border: #ddd;
+  --box: #f6f6f6;
+  --bg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+
+.intro {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.title {
+  margin: 4px 0;
+  font-weight: 600;
+}
+
+.location,
+.dates {
+  margin: 0;
+  color: var(--muted);
+}
+
+.status {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 28px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Sections */
+
+.section {
+  padding: 24px 0;
+}
+
+h2 {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
+}
+
+.subheading {
+  margin-top: 28px;
+}
+
+.skills dt {
+  font-weight: 600;
+}
+
+.skills dd {
+  margin: 0 0 10px;
+}
+
+/* Projects */
+
+.project {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: var(--box);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 6px;
+  white-space: nowrap;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.earlier-work li,
+.plain-list li {
+  margin-bottom: 6px;
+}
+
+/* Experience */
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  margin-bottom: 0;
+}
+
+.org {
+  display: block;
+  font-weight: normal;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+/* Footer */
+
+.site-footer {
+  padding-top: 16px;
+  padding-bottom: 40px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
+
+/* Phone width */
+
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-links,
+  .site-nav {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
