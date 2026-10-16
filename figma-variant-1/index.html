@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ohad Gadassi | Full-Stack Developer</title>
+  <meta name="description" content="Ohad Gadassi, full-stack developer in Ramat Gan. I build web and mobile apps with React, Node.js and React Native, many used daily. Open to full-stack roles.">
+  <!-- Design variant: keep it out of search results and point to the live page -->
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://ogadassi.github.io/">
+  <meta name="theme-color" content="#2ee6b6">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=IBM+Plex+Mono&family=Inter:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Ohad Gadassi | Full-Stack Developer">
+  <meta property="og:description" content="Ohad Gadassi, full-stack developer in Ramat Gan. I build web and mobile apps with React, Node.js and React Native, many used daily. Open to full-stack roles.">
+  <meta property="og:image" content="https://ogadassi.github.io/assets/profile.jpg">
+  <meta property="og:image:alt" content="Ohad Gadassi">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Icon sprite -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9v11h13V9"/><path d="M10 20v-5.5h4V20"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 2.8 20.2 7.3v9.4L12 21.2l-8.2-4.5V7.3z"/><path d="M3.8 7.3 12 11.8l8.2-4.5"/><path d="M12 11.8v9.4"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5.2c0-.7.5-1.2 1.2-1.2h3.6c.7 0 1.2.5 1.2 1.2V7"/><path d="M3 12.5h18"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m7.5 9.5 3 2.5-3 2.5"/><path d="M12.5 15h4"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11.2v4.3c0 1.6 2.5 3 5.5 3s5.5-1.4 5.5-3v-4.3"/><path d="M21.5 9v5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M8.5 7H17v8.5"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M7 7l10 10"/><path d="M17 8.5V17H8.5"/></symbol>
+    <symbol id="i-arrow-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M7.5 12h9"/><path d="m13 8.5 3.5 3.5-3.5 3.5"/></symbol>
+    <symbol id="i-arrow-curve" viewBox="0 0 24 24"><path d="M5 19v-5a5 5 0 0 1 5-5h9"/><path d="m15 5 4 4-4 4"/></symbol>
+  </svg>
+
+  <header class="hero" id="top">
+    <div class="hero-bar">
+      <p class="hero-handle">© Code by Ohad</p>
+      <p class="hero-tagline">Full-stack developer in Ramat Gan, Israel, building web and mobile apps with React, Node.js and React Native.</p>
+    </div>
+
+    <div class="hero-stage">
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="assets/profile.jpg" alt="Ohad Gadassi" width="308" height="308">
+      </div>
+      <a class="hero-arrow" href="#about" aria-label="Scroll to About">
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+      </a>
+    </div>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <h1 class="marquee-item">Ohad Gadassi <span aria-hidden="true">·</span> Full-Stack Developer <span aria-hidden="true">·</span></h1>
+        <p class="marquee-item" aria-hidden="true">Ohad Gadassi · Full-Stack Developer ·</p>
+      </div>
+    </div>
+
+    <p class="hero-status"><span class="status-dot" aria-hidden="true"></span>Open to full-stack roles</p>
+  </header>
+
+  <nav class="dock" aria-label="Sections">
+    <a href="#top"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg><span class="tip">Home</span></a>
+    <a href="#about" class="dock-avatar"><img src="assets/profile.jpg" alt="" width="308" height="308"><span class="tip">About</span></a>
+    <a href="#projects"><svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg><span class="tip">Projects</span></a>
+    <a href="#experience"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg><span class="tip">Experience</span></a>
+    <a href="#skills"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg><span class="tip">Skills</span></a>
+    <a href="#education"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg><span class="tip">Education</span></a>
+    <a href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span class="tip">Contact</span></a>
+  </nav>
+
+  <main id="main">
+
+    <section id="about" class="container intro">
+      <h2 class="eyebrow">About</h2>
+      <div class="intro-grid">
+        <p class="intro-lead">I'm a junior full-stack developer building web and mobile apps with React, Node.js and React Native. I build tools for problems I actually have, and I use many of them daily.</p>
+        <div class="intro-side">
+          <p>I'm currently building my own projects full time while looking for a full-stack role. Before that I worked in IT support at Ramat Gan Municipality, which showed me every day what actually breaks for real users, and I carry that into how I build. I published one of my tools to the Chrome Web Store, and I graduated the John Bryce Full-Stack course with honors.</p>
+          <p>Open to full-stack, frontend, backend and React Native roles. I also bring hands-on IT support experience.</p>
+          <ul class="arrow-links">
+            <li><a href="mailto:ogadassi@gmail.com">Email me <svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/ohad-gadassi/" target="_blank" rel="noopener">Full CV on LinkedIn <svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg></a></li>
+            <li><a href="https://github.com/ogadassi" target="_blank" rel="noopener">GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <div class="section-head">
+        <h2 class="display">Featured projects</h2>
+        <p class="section-note">I built all of these solo, except Grapevine.</p>
+      </div>
+
+      <div class="work-grid">
+
+        <article class="work">
+          <div class="work-media media--forest" aria-hidden="true">
+            <span class="media-label">iOS · Android · Web</span>
+            <span class="media-stat">332</span>
+            <span class="media-caption">practice questions, plus 74 fallacies and 12 debates</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Steelman</h3>
+            <ul class="badges"><li>Pre-launch</li><li>Private repo</li></ul>
+            <p><strong>Problem:</strong> Everyone has the list of logical fallacies. Nobody trains the reflex to spot them.</p>
+            <p><strong>What I built:</strong> An education app for iOS, Android and web that trains you to catch bad arguments. The Astro website opens with a playable "Fair, or a fallacy?" demo and a waitlist.</p>
+            <p><strong>Proof:</strong> 74 fallacies, 332 practice questions and 12 debates ready in the app.</p>
+            <ul class="tags"><li>Expo</li><li>React Native</li><li>TypeScript</li><li>Supabase</li><li>Astro</li></ul>
+            <p class="work-links"><a class="pill pill--solid" href="https://playsteelman.vercel.app" target="_blank" rel="noopener" aria-label="Steelman live site">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-media media--cyan" aria-hidden="true">
+            <span class="media-label">Desktop · Spotify</span>
+            <span class="media-stat">465 ms</span>
+            <span class="media-caption">of the 567 ms median sync lag came from polling. Running inside Spotify removes it.</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Sterrify</h3>
+            <ul class="badges"><li>Daily use</li></ul>
+            <p><strong>Problem:</strong> Playing along meant switching between Spotify and Songsterr while holding an instrument.</p>
+            <p><strong>What I built:</strong> An Electron app that syncs Songsterr to Spotify and switches instrument and tuning automatically. I then rebuilt it as Sterrify Tabs <span class="badge">Private repo</span>, a Spicetify app that renders the tab inside Spotify with alphaTab. The old app polled the Web API, which caused 465 ms of its 567 ms median sync lag. Running inside Spotify removes that delay.</p>
+            <p><strong>Proof:</strong> I use it daily. Sterrify Tabs has an automated test suite.</p>
+            <ul class="tags"><li>Electron</li><li>Node.js</li><li>Spotify API</li><li>Spicetify</li><li>alphaTab</li></ul>
+            <p class="work-links"><a class="pill" href="https://github.com/ogadassi/Sterrify" target="_blank" rel="noopener" aria-label="Sterrify desktop app repository on GitHub">Repo (desktop app) <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-media media--blend" aria-hidden="true">
+            <span class="media-label">Android · Android Auto</span>
+            <span class="media-stat">10 releases</span>
+            <span class="media-caption">and 128 commits, v1.1 to v2.5 in about two months</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>AC Notification</h3>
+            <ul class="badges"><li>Daily use</li></ul>
+            <p><strong>Problem:</strong> I kept walking into a hot apartment because the AC only came on once I was already home.</p>
+            <p><strong>What I built:</strong> A geofence around home triggers a 1-tap "turn on AC" notification on Android and Android Auto. A Windows server (Python Flask, exposed through ngrok) controls Midea ACs directly over the LAN.</p>
+            <p><strong>Proof:</strong> 128 commits and 10 GitHub releases (v1.1 to v2.5) in about two months. I use it daily.</p>
+            <ul class="tags"><li>Kotlin</li><li>Android Auto</li><li>Geofencing</li><li>Python</li><li>Flask</li><li>ngrok</li></ul>
+            <p class="work-links"><a class="pill" href="https://github.com/ogadassi/ac-notification" target="_blank" rel="noopener" aria-label="AC Notification repository on GitHub">Repo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-media media--mint" aria-hidden="true">
+            <span class="media-label">Chrome extension</span>
+            <span class="media-stat">5.0 ★</span>
+            <span class="media-caption">from 24 users on the Chrome Web Store</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>YouTube Watch Later Manager</h3>
+            <ul class="badges"><li>Published</li><li>Daily use</li></ul>
+            <p><strong>Problem:</strong> Saving or removing a video from Watch Later is buried in YouTube's menus.</p>
+            <p><strong>What I built:</strong> A Chrome extension with 1-click Watch Later buttons across YouTube. It matches icon shapes instead of English text, so it works in any language. It finds buttons at click time, because YouTube reuses page elements. Theme-aware, with no trackers.</p>
+            <p><strong>Proof:</strong> 24 users and 5.0 stars on the Chrome Web Store. I use it daily.</p>
+            <ul class="tags"><li>JavaScript</li><li>Chrome extension</li></ul>
+            <p class="work-links">
+              <a class="pill pill--solid" href="https://chromewebstore.google.com/detail/youtube-watch-later-manag/cipblemimaiffjenjhnplnegbembhgmc" target="_blank" rel="noopener" aria-label="YouTube Watch Later Manager on the Chrome Web Store">Chrome Web Store <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="pill" href="https://github.com/ogadassi/WatchLater" target="_blank" rel="noopener" aria-label="YouTube Watch Later Manager repository on GitHub">Repo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </p>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-media media--cyan" aria-hidden="true">
+            <span class="media-label">Web</span>
+            <span class="media-stat">Real-time</span>
+            <span class="media-caption">drag-and-drop task canvas, synced over Socket.io</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Forest</h3>
+            <ul class="badges"><li>Paused</li></ul>
+            <p><strong>Problem:</strong> My to-do lists got cluttered, and I lost the big picture of what mattered.</p>
+            <p><strong>What I built:</strong> A canvas-based task manager with drag-and-drop and real-time sync over Socket.io. React 19 and Vite on the front end, Node.js, Express and Prisma on the back end, with Jest tests.</p>
+            <p><strong>Status:</strong> Paused. A mobile companion with time- and location-based reminders is planned.</p>
+            <ul class="tags"><li>React 19</li><li>Vite</li><li>Tailwind</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>Socket.io</li><li>Jest</li></ul>
+            <p class="work-links"><a class="pill" href="https://github.com/ogadassi/Forest" target="_blank" rel="noopener" aria-label="Forest repository on GitHub">Repo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-media media--forest" aria-hidden="true">
+            <span class="media-label">Mobile · Hebrew, right-to-left</span>
+            <span class="media-stat">4 games</span>
+            <span class="media-caption">and an in-app economy with 16 cosmetic packs</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Grapevine</h3>
+            <ul class="badges"><li>Built with a friend</li><li>No longer in use</li></ul>
+            <p><strong>Why:</strong> A creative and technical experiment. We built our own social network, I talked our friend group into using it, and then we added games and an in-app economy to reward playing.</p>
+            <p><strong>What we built:</strong> A Hebrew, right-to-left mobile app with posts, comments, custom Golden Grape and Raisin reactions, and push notifications.</p>
+            <p><strong>Games:</strong> Two replaced party games we used to play with pen and paper or had to work hard to invent on the spot: Land City, a 14-category multi-page form with shared state, and a rule game that builds a fresh rule each round from a recursive grammar. Eshkolosseum is a nightly D&amp;D-style auto-battle between our characters, run by a scheduled Node.js server, where players bet coins on the fighters. Eli Clicker is an idle game that cashes out into coins.</p>
+            <p><strong>Economy:</strong> Players earn coins by winning bets and playing, and spend them in a store of 16 cosmetic packs that restyle their posts.</p>
+            <ul class="tags"><li>React Native</li><li>Expo</li><li>Appwrite</li><li>Node.js</li><li>Express</li><li>TypeScript</li></ul>
+            <p class="work-links"><a class="pill" href="https://github.com/ogadassi/Grapevine" target="_blank" rel="noopener" aria-label="Grapevine repository on GitHub">Repo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-media media--mint" aria-hidden="true">
+            <span class="media-label">Windows desktop</span>
+            <span class="media-stat">0 keystrokes</span>
+            <span class="media-caption">simulated since the rebuild on Windows UI Automation</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Friendmeter</h3>
+            <ul class="badges"><li>Daily use</li><li>Private repo</li></ul>
+            <p><strong>Problem:</strong> I wanted my friends always in view on my desktop, not hidden inside two separate apps.</p>
+            <p><strong>What I built:</strong> A Windows desktop widget: a "Liquid Glass" Rainmeter skin plus a Node.js bridge. Clicking a notification jumps to the chat. An early version simulated keystrokes and could type a name into the wrong chat. I rebuilt it on Windows UI Automation, with no typing and reliable Hebrew name matching.</p>
+            <p><strong>Proof:</strong> I use it daily. Covered by unit tests.</p>
+            <ul class="tags"><li>Lua</li><li>Rainmeter</li><li>Node.js</li><li>TypeScript</li></ul>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-media media--blend" aria-hidden="true">
+            <span class="media-label">Android widget</span>
+            <span class="media-stat">1.9 MB</span>
+            <span class="media-caption">APK, down from 13.9 MB with R8</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Android Bluetooth Control Widget</h3>
+            <ul class="badges"><li>Daily use</li><li>Private repo</li></ul>
+            <p><strong>Problem:</strong> Android makes you dig into system settings to connect one specific Bluetooth device.</p>
+            <p><strong>What I built:</strong> A one-tap home-screen widget that works without root, using Shizuku. Android 12+ hides MAC addresses, so it matches devices by name instead. R8 shrank the APK from 13.9 MB to 1.9 MB.</p>
+            <p><strong>Proof:</strong> I use it daily.</p>
+            <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Shizuku</li></ul>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="subhead">Earlier &amp; smaller work</h3>
+      <ul class="row-list">
+        <li><span class="row-name"><a href="https://github.com/ogadassi/RLScoreBot" target="_blank" rel="noopener">RLScoreBot</a></span><span class="row-desc">A Python Discord bot that watches Rocket League with computer vision and plays a sound in voice chat when a goal is scored.</span></li>
+        <li><span class="row-name"><a href="https://github.com/ogadassi/gmm-player" target="_blank" rel="noopener">Mythical Vision</a></span><span class="row-desc">A "vintage morning TV" YouTube player. Channel-style, with no scrolling and no algorithms.</span></li>
+        <li><span class="row-name">JobScout <span class="badge">Private repo</span></span><span class="row-desc">A TypeScript/NestJS tool that collects and scores junior developer job listings into Excel.</span></li>
+        <li><span class="row-name"><a href="https://github.com/ogadassi/Vacation-Time" target="_blank" rel="noopener">Vacation Time</a></span><span class="row-desc">My John Bryce final project, a vacation-planning web app.</span></li>
+        <li><span class="row-name"><a href="https://github.com/ogadassi/triot-official-website" target="_blank" rel="noopener">TRIOT</a></span><span class="row-desc">The website for my band.</span></li>
+        <li><span class="row-name"><a href="https://ogadassi.github.io/MineSweeper/" target="_blank" rel="noopener">MineSweeper</a></span><span class="row-desc">A browser game.</span></li>
+      </ul>
+
+      <p class="center"><a class="pill pill--dot" href="https://github.com/ogadassi" target="_blank" rel="noopener">More on GitHub</a></p>
+    </section>
+
+    <section id="experience" class="container section">
+      <div class="section-head">
+        <h2 class="display">Experience</h2>
+      </div>
+
+      <article class="job">
+        <p class="job-dates">2025 – 2026</p>
+        <h3 class="job-role">IT Support Specialist <span class="job-org">Ramat Gan Municipality</span></h3>
+        <ul class="job-points">
+          <li>Diagnosed and fixed hardware and OS issues for staff across a large organization, so they could get back to work.</li>
+          <li>Managed user permissions and connectivity, and supported the core systems the municipality runs on.</li>
+          <li>Saw firsthand what breaks for real users, which shapes how I build my own software.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <p class="job-dates">2024 – 2025</p>
+        <h3 class="job-role">General Insurance Service Representative <span class="job-org">Phoenix</span></h3>
+        <ul class="job-points">
+          <li>Identified client needs and explained complex technical and insurance information clearly.</li>
+          <li>Met strict KPIs while working with multiple internal and external interfaces.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <p class="job-dates">2022 – 2023</p>
+        <h3 class="job-role">Electronics Logistics Stock Keeper <span class="job-org">Rad Data Communications</span></h3>
+        <ul class="job-points">
+          <li>Managed electronics logistics with modern inventory systems.</li>
+          <li>Kept stock records precise in a fast-paced high-tech environment.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="military" class="container section section--tight">
+      <div class="section-head">
+        <h2 class="display display--sm">Military service</h2>
+      </div>
+
+      <article class="job">
+        <p class="job-dates">2019 – 2022</p>
+        <h3 class="job-role">Bureau Manager &amp; Assistant to Head of Casualty Department</h3>
+        <ul class="job-points">
+          <li>Ran the command-and-control center during national emergencies, processing casualty data in real time.</li>
+          <li>Managed executive schedules and discussion materials, and trained bureau staff.</li>
+          <li>Recalled for reserve duty in 2022 to manage the leadership transition for the Head of the Department.</li>
+        </ul>
+      </article>
+    </section>
+
+    <div class="band">
+
+      <section id="skills" class="container section">
+        <h2 class="display display--center">Skills behind the work</h2>
+
+        <div class="bento">
+          <article class="bento-card">
+            <ul class="bento-icons" aria-hidden="true">
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/typescript/typescript-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/react/react-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img class="lift" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+            </ul>
+            <h3>Core</h3>
+            <ul class="chips"><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Node.js</li><li>React Native / Expo</li><li>SQL (MySQL)</li><li>MongoDB</li><li>HTML/CSS</li></ul>
+          </article>
+
+          <article class="bento-card">
+            <ul class="bento-icons" aria-hidden="true">
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/kotlin/kotlin-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img class="lift" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/lua/lua-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+            </ul>
+            <h3>Other languages</h3>
+            <ul class="chips"><li>Python</li><li>Kotlin</li><li>Lua</li></ul>
+          </article>
+
+          <article class="bento-card">
+            <ul class="bento-icons" aria-hidden="true">
+              <li><img class="mono" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/express/express-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nestjs/nestjs-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img class="mono" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/flask/flask-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img class="mono" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/prisma/prisma-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/supabase/supabase-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/appwrite/appwrite-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+            </ul>
+            <h3>Back end &amp; data</h3>
+            <ul class="chips"><li>Express</li><li>NestJS</li><li>Flask</li><li>Prisma</li><li>REST APIs</li><li>WebSockets (Socket.io)</li><li>Supabase</li><li>Appwrite</li></ul>
+          </article>
+
+          <article class="bento-card">
+            <ul class="bento-icons" aria-hidden="true">
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angular/angular-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img class="mono" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/astro/astro-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vitejs/vitejs-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/tailwindcss/tailwindcss-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+            </ul>
+            <h3>Front end &amp; web</h3>
+            <ul class="chips"><li>Angular</li><li>Astro</li><li>Vite</li><li>Tailwind</li></ul>
+          </article>
+
+          <article class="bento-card">
+            <ul class="bento-icons" aria-hidden="true">
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/jetpackcompose/jetpackcompose-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img class="lift" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/electron/electron-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/chrome/chrome-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+            </ul>
+            <h3>Mobile, desktop &amp; browser</h3>
+            <ul class="chips"><li>Jetpack Compose (Android)</li><li>Electron</li><li>Chrome extensions</li><li>Spicetify</li></ul>
+          </article>
+
+          <article class="bento-card">
+            <ul class="bento-icons" aria-hidden="true">
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img class="mono" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/github/github-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/docker/docker-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img class="mono" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vercel/vercel-original.svg" alt="" width="40" height="40" loading="lazy"></li>
+              <li><img class="lift" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/jest/jest-plain.svg" alt="" width="40" height="40" loading="lazy"></li>
+            </ul>
+            <h3>Tools</h3>
+            <ul class="chips"><li>Git</li><li>GitHub</li><li>Docker</li><li>Vercel</li><li>Jest</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="container section">
+        <h2 class="display">Education</h2>
+
+        <div class="bento bento--edu">
+          <article class="bento-card">
+            <p class="bento-meta">2023 – 2024</p>
+            <h3>John Bryce</h3>
+            <p>Full-Stack Development</p>
+            <ul class="chips"><li class="chip--accent">Graduated with honors</li></ul>
+          </article>
+
+          <article class="bento-card">
+            <p class="bento-meta">2016 – 2019</p>
+            <h3>Ort Ebin</h3>
+            <p>Full Matriculation Certificate</p>
+          </article>
+
+          <article class="bento-card">
+            <h3>Languages</h3>
+            <ul class="chips"><li>Hebrew (native)</li><li>English (fluent)</li></ul>
+          </article>
+
+          <article class="bento-card">
+            <h3>Beyond code</h3>
+            <p>I play in a band, TRIOT, and I built our website too. Most of my side projects start the same way: "this annoys me, let me automate it."</p>
+          </article>
+        </div>
+      </section>
+
+    </div>
+
+    <section id="contact" class="container contact">
+      <p class="mono">That's all for now.</p>
+      <h2 class="contact-title">Hiring a full-stack developer?<br>Let's talk</h2>
+
+      <div class="contact-rule">
+        <a class="cta-circle" href="mailto:ogadassi@gmail.com">Get in touch</a>
+      </div>
+
+      <dl class="contact-details">
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:ogadassi@gmail.com">ogadassi@gmail.com</a></dd>
+        </div>
+        <div>
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/ohad-gadassi/" target="_blank" rel="noopener">in/ohad-gadassi</a></dd>
+        </div>
+        <div>
+          <dt>GitHub</dt>
+          <dd><a href="https://github.com/ogadassi" target="_blank" rel="noopener">ogadassi</a></dd>
+        </div>
+      </dl>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <p class="footer-line">this annoys me, let me automate it</p>
+      <a class="footer-up" href="#top" aria-label="Back to top">
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow-curve"/></svg>
+      </a>
+    </div>
+    <p class="footer-name" aria-hidden="true">Ohad Gadassi</p>
+    <div class="footer-meta">
+      <p>© 2026 Ohad Gadassi</p>
+      <p>
+        <a href="https://github.com/ogadassi" target="_blank" rel="noopener">GitHub</a>
+        ·
+        <a href="https://www.linkedin.com/in/ohad-gadassi/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Highlight the dock button for the section in view
+    (function () {
+      var links = document.querySelectorAll('.dock a');
+      if (!('IntersectionObserver' in window)) return;
+      var byId = {};
+      links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var id = entry.target.id === 'military' ? 'experience' : entry.target.id;
+          links.forEach(function (a) { a.removeAttribute('aria-current'); });
+          if (byId[id]) byId[id].setAttribute('aria-current', 'location');
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      ['top', 'about', 'projects', 'experience', 'military', 'skills', 'education', 'contact'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>
