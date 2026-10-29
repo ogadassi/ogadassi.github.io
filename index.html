@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <script>
+    // Dark by default; use the visitor's saved choice if they picked light
+    try { if (localStorage.getItem('theme') === 'light') document.documentElement.dataset.theme = 'light'; } catch (e) {}
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ohad Gadassi | Full-Stack Developer</title>
   <meta name="description" content="Ohad Gadassi, full-stack developer in Ramat Gan with an IT infrastructure background. I build web, mobile and desktop apps with React, Node.js and React Native, many used daily. Open to full-stack roles.">
@@ -73,6 +77,8 @@
     <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M7 7l10 10"/><path d="M17 8.5V17H8.5"/></symbol>
     <symbol id="i-arrow-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M7.5 12h9"/><path d="m13 8.5 3.5 3.5-3.5 3.5"/></symbol>
     <symbol id="i-arrow-curve" viewBox="0 0 24 24"><path d="M5 19v-5a5 5 0 0 1 5-5h9"/><path d="m15 5 4 4-4 4"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></symbol>
   </svg>
 
   <header class="hero" id="top">
@@ -108,6 +114,11 @@
     <a href="#skills"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg><span class="tip">Skills</span></a>
     <a href="#education"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg><span class="tip">Education</span></a>
     <a href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span class="tip">Contact</span></a>
+    <button type="button" class="theme-toggle" aria-label="Dark mode" aria-pressed="true">
+      <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      <span class="tip" aria-hidden="true">Light mode</span>
+    </button>
   </nav>
 
   <main id="main">
@@ -503,6 +514,34 @@
   </footer>
 
   <script>
+    // Dark / light toggle in the dock
+    (function () {
+      var root = document.documentElement;
+      var button = document.querySelector('.theme-toggle');
+      var tip = button.querySelector('.tip');
+      var timer;
+
+      function sync() {
+        var dark = root.dataset.theme === 'dark';
+        button.setAttribute('aria-pressed', String(dark));
+        tip.textContent = dark ? 'Light mode' : 'Dark mode';
+      }
+
+      button.addEventListener('click', function () {
+        var next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          root.classList.add('theme-anim');
+          clearTimeout(timer);
+          timer = setTimeout(function () { root.classList.remove('theme-anim'); }, 400);
+        }
+        root.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        sync();
+      });
+
+      sync();
+    })();
+
     // Highlight the dock button for the section in view
     (function () {
       var links = document.querySelectorAll('.dock a');
