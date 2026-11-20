@@ -158,9 +158,26 @@
             <ul class="badges"><li>Pre-launch</li><li>Private repo</li></ul>
             <p><strong>Problem:</strong> Everyone has the list of logical fallacies. Nobody trains the reflex to spot them.</p>
             <p><strong>What I built:</strong> An education app for iOS, Android and web that trains you to catch bad arguments. It has skill trees and offline-first sync. The Astro website opens with a playable "Fair, or a fallacy?" demo and a waitlist.</p>
-            <p><strong>Proof:</strong> 74 fallacies, 744 practice questions, 12 debates and 20 LSAT-style drills ready in the app.</p>
+            <p><strong>Proof:</strong> 74 fallacies, 744 practice questions, 12 debates and 20 LSAT-style drills ready in the app. A no-sign-in web playtest logs answers anonymously, so I can see where testers get stuck, and waitlist sign-ups get a welcome email.</p>
             <ul class="tags"><li>Expo</li><li>React Native</li><li>TypeScript</li><li>Supabase</li><li>Astro</li></ul>
             <p class="work-links"><a class="pill pill--solid" href="https://playsteelman.vercel.app" target="_blank" rel="noopener" aria-label="Steelman live site">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-media media--cyan" aria-hidden="true">
+            <span class="media-label">Web · Android · AI assistant</span>
+            <span class="media-stat">103 commits</span>
+            <span class="media-caption">in three weeks, rebuilt from scratch as Forest v3</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Forest</h3>
+            <ul class="badges"><li>In active development</li><li>Private repo</li></ul>
+            <p><strong>Problem:</strong> My notes, lists and app ideas were scattered, and typing them up slowed me down.</p>
+            <p><strong>What I built:</strong> A notes board of resizable cards with Keeper, an AI assistant you talk to. Hold Space and speak, and Keeper works out what it is (a note, a checklist item, song lines, an app idea) and files it, with undo for every change. A Dev Inbox turns spoken app ideas into structured Claude Code prompts, filed per project, and a Claude Code skill picks them up. The Android app adds native voice input, a home-screen widget and the Share menu.</p>
+            <p><strong>How:</strong> Supabase Edge Functions run Keeper on free models (Groq first, Gemini and a local Ollama as backups). Playwright tests cover the board on desktop and phone, and prompt tests check that no dictated detail is lost or invented.</p>
+            <ul class="tags"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind</li><li>Supabase</li><li>Capacitor</li><li>LLM APIs</li><li>Playwright</li></ul>
+            <p class="work-links"><a class="pill" href="https://github.com/ogadassi/Forest" target="_blank" rel="noopener" aria-label="Earlier Forest version repository on GitHub">Repo (earlier version) <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
           </div>
         </article>
 
@@ -201,15 +218,15 @@
         <article class="work">
           <div class="work-media media--mint" aria-hidden="true">
             <span class="media-label">Chrome extension</span>
-            <span class="media-stat">5.0 ★</span>
-            <span class="media-caption">from 24 users on the Chrome Web Store</span>
+            <span class="media-stat">31 users</span>
+            <span class="media-caption">and a 5.0 ★ rating on the Chrome Web Store</span>
           </div>
           <div class="work-body">
             <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>YouTube Watch Later Manager</h3>
             <ul class="badges"><li>Published</li><li>Daily use</li></ul>
             <p><strong>Problem:</strong> Saving or removing a video from Watch Later is buried in YouTube's menus.</p>
             <p><strong>What I built:</strong> A Chrome extension with 1-click Watch Later buttons across YouTube. It matches icon shapes instead of English text, so it works in any language. It finds buttons at click time, because YouTube reuses page elements. Theme-aware, with no trackers.</p>
-            <p><strong>Proof:</strong> 24 users and 5.0 stars on the Chrome Web Store. I use it daily.</p>
+            <p><strong>Proof:</strong> 31 users and a 5.0-star rating on the Chrome Web Store, now on version 1.7. I use it daily.</p>
             <ul class="tags"><li>JavaScript</li><li>Chrome extension</li></ul>
             <p class="work-links">
               <a class="pill pill--solid" href="https://chromewebstore.google.com/detail/youtube-watch-later-manag/cipblemimaiffjenjhnplnegbembhgmc" target="_blank" rel="noopener" aria-label="YouTube Watch Later Manager on the Chrome Web Store">Chrome Web Store <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -219,19 +236,19 @@
         </article>
 
         <article class="work">
-          <div class="work-media media--cyan" aria-hidden="true">
-            <span class="media-label">Web</span>
-            <span class="media-stat">Real-time</span>
-            <span class="media-caption">drag-and-drop task canvas, synced over Socket.io</span>
+          <div class="work-media media--mint" aria-hidden="true">
+            <span class="media-label">Windows desktop</span>
+            <span class="media-stat">0 keystrokes</span>
+            <span class="media-caption">simulated since the rebuild on Windows UI Automation</span>
           </div>
           <div class="work-body">
-            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Forest</h3>
-            <ul class="badges"><li>Paused</li></ul>
-            <p><strong>Problem:</strong> My to-do lists got cluttered, and I lost the big picture of what mattered.</p>
-            <p><strong>What I built:</strong> A canvas-based task manager with drag-and-drop and real-time sync over Socket.io. React 19 and Vite on the front end, Node.js, Express and Prisma on the back end, with Jest tests.</p>
-            <p><strong>Status:</strong> Paused. A mobile companion with time- and location-based reminders is planned.</p>
-            <ul class="tags"><li>React 19</li><li>Vite</li><li>Tailwind</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>Socket.io</li><li>Jest</li></ul>
-            <p class="work-links"><a class="pill" href="https://github.com/ogadassi/Forest" target="_blank" rel="noopener" aria-label="Forest repository on GitHub">Repo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Friendmeter</h3>
+            <ul class="badges"><li>Daily use</li><li>Private repo</li></ul>
+            <p><strong>Problem:</strong> I wanted my friends always in view on my desktop, not hidden inside two separate apps.</p>
+            <p><strong>What I built:</strong> It started as one Windows widget for Discord and WhatsApp: a "Liquid Glass" Rainmeter skin plus a Node.js bridge. Clicking a notification jumps to the chat. An early version simulated keystrokes and could type a name into the wrong chat. I rebuilt it on Windows UI Automation, with no typing and reliable Hebrew name matching.</p>
+            <p><strong>Now:</strong> A full widget pack: media, weather, my phone's notifications, AC control from the desk and a macropad, and a desktop Keeper from Forest. An Android port draws the same widgets on my phone's home screen.</p>
+            <p><strong>Proof:</strong> I use it daily. Covered by unit tests.</p>
+            <ul class="tags"><li>Lua</li><li>Rainmeter</li><li>Node.js</li><li>TypeScript</li><li>C#</li><li>Kotlin</li></ul>
           </div>
         </article>
 
@@ -254,44 +271,46 @@
         </article>
 
         <article class="work">
-          <div class="work-media media--mint" aria-hidden="true">
-            <span class="media-label">Windows desktop</span>
-            <span class="media-stat">0 keystrokes</span>
-            <span class="media-caption">simulated since the rebuild on Windows UI Automation</span>
-          </div>
-          <div class="work-body">
-            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Friendmeter</h3>
-            <ul class="badges"><li>Daily use</li><li>Private repo</li></ul>
-            <p><strong>Problem:</strong> I wanted my friends always in view on my desktop, not hidden inside two separate apps.</p>
-            <p><strong>What I built:</strong> A Windows desktop widget: a "Liquid Glass" Rainmeter skin plus a Node.js bridge. Clicking a notification jumps to the chat. An early version simulated keystrokes and could type a name into the wrong chat. I rebuilt it on Windows UI Automation, with no typing and reliable Hebrew name matching.</p>
-            <p><strong>Proof:</strong> I use it daily. Covered by unit tests.</p>
-            <ul class="tags"><li>Lua</li><li>Rainmeter</li><li>Node.js</li><li>TypeScript</li></ul>
-          </div>
-        </article>
-
-        <article class="work">
           <div class="work-media media--blend" aria-hidden="true">
             <span class="media-label">Android widget</span>
-            <span class="media-stat">1.9 MB</span>
+            <span class="media-stat" data-count-from="13.9">1.9 MB</span>
             <span class="media-caption">APK, down from 13.9 MB with R8</span>
           </div>
           <div class="work-body">
             <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Android Bluetooth Control Widget</h3>
             <ul class="badges"><li>Daily use</li><li>Private repo</li></ul>
             <p><strong>Problem:</strong> Android makes you dig into system settings to connect one specific Bluetooth device.</p>
-            <p><strong>What I built:</strong> A one-tap home-screen widget that works without root, using Shizuku. Android 12+ hides MAC addresses, so it matches devices by name instead. R8 shrank the APK from 13.9 MB to 1.9 MB.</p>
+            <p><strong>What I built:</strong> A one-tap home-screen widget that works without root, using Shizuku. Android 12+ hides MAC addresses, so it matches devices by name instead. A circle next to the volume bar switches audio between the phone and Bluetooth. R8 shrank the APK from 13.9 MB to 1.9 MB.</p>
             <p><strong>Proof:</strong> I use it daily.</p>
             <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Shizuku</li></ul>
           </div>
         </article>
 
+        <article class="work">
+          <div class="work-media media--forest" aria-hidden="true">
+            <span class="media-label">PC game mod · C++</span>
+            <span class="media-stat">0 menu exits</span>
+            <span class="media-caption">to dye anything you own, from your bag to the warehouse</span>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title"><svg class="icon" aria-hidden="true"><use href="#i-arrow-circle"/></svg>Dye All</h3>
+            <ul class="badges"><li>Released</li><li>Open source</li></ul>
+            <p><strong>Problem:</strong> In Crimson Desert, the dyer only shows what you're wearing. Dyeing a stored item means leaving, equipping it, coming back and putting it away again.</p>
+            <p><strong>What I built:</strong> A mod that lists every dyeable item from the bag, wardrobe, chests and warehouse on the dye screen. One double-click puts an item on, and closing the dyer puts everything back where it came from. I reverse engineered the game's own equip and dye requests, so the mod never makes an item dyeable that the game doesn't allow.</p>
+            <p><strong>Safety:</strong> It checks the inventories after every step and stops if one fails, so no item is ever lost. After a game update it switches off any hook that no longer matches, instead of guessing.</p>
+            <ul class="tags"><li>C++</li><li>Reverse engineering</li><li>Dear ImGui</li><li>MinHook</li><li>Python</li></ul>
+            <p class="work-links"><a class="pill" href="https://github.com/ogadassi/crimson-desert-dye-all" target="_blank" rel="noopener" aria-label="Dye All repository on GitHub">Repo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+          </div>
+        </article>
+
       </div>
 
-      <h3 class="subhead">Earlier &amp; smaller work</h3>
+      <h3 class="subhead">More &amp; earlier work</h3>
       <ul class="row-list">
+        <li><span class="row-name"><a href="https://github.com/ogadassi/JobScout" target="_blank" rel="noopener">JobScout</a></span><span class="row-desc">A nightly TypeScript pipeline that collects jobs from about 75 Israeli tech companies' public job boards, scores them with keyword rules and Claude, stores them in Supabase and sends me a Telegram digest each morning.</span></li>
+        <li><span class="row-name"><a href="https://greenlight-productions.vercel.app" target="_blank" rel="noopener">Greenlight Productions</a></span><span class="row-desc">The Hebrew and English website for the recording studio I co-founded in Ramat Gan, with open package pricing and legal pages in both languages.</span></li>
         <li><span class="row-name"><a href="https://github.com/ogadassi/RLScoreBot" target="_blank" rel="noopener">RLScoreBot</a></span><span class="row-desc">A Python Discord bot that watches Rocket League with computer vision and plays a sound in voice chat when a goal is scored.</span></li>
         <li><span class="row-name"><a href="https://github.com/ogadassi/gmm-player" target="_blank" rel="noopener">Mythical Vision</a></span><span class="row-desc">A "vintage morning TV" YouTube player. Channel-style, with no scrolling and no algorithms.</span></li>
-        <li><span class="row-name">JobScout <span class="badge">Private repo</span></span><span class="row-desc">A TypeScript/NestJS tool that collects and scores junior developer job listings into Excel.</span></li>
         <li><span class="row-name"><a href="https://github.com/ogadassi/Vacation-Time" target="_blank" rel="noopener">Vacation Time</a></span><span class="row-desc">My John Bryce final project, a vacation-planning web app.</span></li>
         <li><span class="row-name"><a href="https://github.com/ogadassi/triot-official-website" target="_blank" rel="noopener">TRIOT</a></span><span class="row-desc">The website for my band.</span></li>
         <li><span class="row-name"><a href="https://ogadassi.github.io/MineSweeper/" target="_blank" rel="noopener">MineSweeper</a></span><span class="row-desc">A browser game.</span></li>
@@ -393,7 +412,7 @@
               <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/appwrite/appwrite-original.svg" alt="" width="40" height="40" loading="lazy"></li>
             </ul>
             <h3>Back end &amp; data</h3>
-            <ul class="chips"><li>Express</li><li>NestJS</li><li>Flask</li><li>Prisma</li><li>REST APIs</li><li>WebSockets (Socket.io)</li><li>Supabase</li><li>Appwrite</li></ul>
+            <ul class="chips"><li>Express</li><li>NestJS</li><li>Flask</li><li>Prisma</li><li>REST APIs</li><li>WebSockets (Socket.io)</li><li>Supabase</li><li>Appwrite</li><li>LLM APIs (Claude, Gemini, Groq)</li></ul>
           </article>
 
           <article class="bento-card">
@@ -414,7 +433,7 @@
               <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/chrome/chrome-original.svg" alt="" width="40" height="40" loading="lazy"></li>
             </ul>
             <h3>Mobile, desktop &amp; browser</h3>
-            <ul class="chips"><li>Jetpack Compose (Android)</li><li>Electron</li><li>Chrome extensions</li><li>Spicetify</li></ul>
+            <ul class="chips"><li>Jetpack Compose (Android)</li><li>Capacitor</li><li>Electron</li><li>Chrome extensions</li><li>Spicetify</li></ul>
           </article>
 
           <article class="bento-card">
@@ -426,7 +445,7 @@
               <li><img class="lift" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/jest/jest-plain.svg" alt="" width="40" height="40" loading="lazy"></li>
             </ul>
             <h3>Tools</h3>
-            <ul class="chips"><li>Git</li><li>GitHub</li><li>Docker</li><li>Vercel</li><li>Jest</li></ul>
+            <ul class="chips"><li>Git</li><li>GitHub</li><li>Docker</li><li>Vercel</li><li>Jest</li><li>Playwright</li></ul>
           </article>
         </div>
       </section>
@@ -462,7 +481,7 @@
 
           <article class="bento-card">
             <h3>Beyond code</h3>
-            <p>I play in a band, TRIOT, and I built our website too. Most of my side projects start the same way: "this annoys me, let me automate it."</p>
+            <p>I play in a band, TRIOT, and co-founded Greenlight Productions, a recording studio. I built both websites. Most of my side projects start the same way: "this annoys me, let me automate it."</p>
           </article>
         </div>
       </section>
@@ -540,6 +559,54 @@
       });
 
       sync();
+    })();
+
+    // Each project's proof number counts to its value the first time it comes into view
+    // (the APK size counts down from its old 13.9 MB). The finished number is already in the HTML.
+    (function () {
+      if (!('IntersectionObserver' in window)) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      var counters = new Map();
+
+      function run(el) {
+        var c = counters.get(el);
+        var duration = 1200;
+        var start = null;
+
+        function frame(now) {
+          if (start === null) start = now;
+          var t = Math.min((now - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - t, 3);
+          el.textContent = (c.from + (c.target - c.from) * eased).toFixed(c.decimals) + c.rest;
+          if (t < 1) requestAnimationFrame(frame);
+        }
+
+        requestAnimationFrame(frame);
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          observer.unobserve(entry.target);
+          run(entry.target);
+        });
+      }, { threshold: 0.6 });
+
+      document.querySelectorAll('.media-stat').forEach(function (el) {
+        var match = el.textContent.match(/^([\d.]+)(.*)$/);
+        if (!match) return;
+        var c = {
+          target: parseFloat(match[1]),
+          rest: match[2],
+          decimals: (match[1].split('.')[1] || '').length,
+          from: parseFloat(el.dataset.countFrom || '0')
+        };
+        if (c.from === c.target) return;
+        counters.set(el, c);
+        el.textContent = c.from.toFixed(c.decimals) + c.rest;
+        observer.observe(el);
+      });
     })();
 
     // Highlight the dock button for the section in view
